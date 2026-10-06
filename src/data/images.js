@@ -1,0 +1,28 @@
+// Dimensões originais (largura x altura) de cada foto em public/images.
+// Cada foto existe em duas larguras: <nome>-720.webp e <nome>-1320.webp.
+export const IMAGES = {
+  'hero-copos-skate': { w: 1320, h: 1643 },
+  'placa-tap': { w: 1320, h: 1139 },
+  'brinde-drinks': { w: 1320, h: 1089 },
+  'tap-pilsen': { w: 1320, h: 1152 },
+  'tap-ipa': { w: 1320, h: 979 },
+  'tap-session': { w: 1320, h: 1035 },
+  'tap-weiss': { w: 1320, h: 1169 },
+  'tap-rotativas': { w: 1320, h: 1096 },
+  'drink-xeque-mate': { w: 1320, h: 1219 },
+  'drink-madame-collins': { w: 1320, h: 1139 },
+  'drinks-gelo': { w: 1320, h: 1057 },
+  'galera-dj-pista': { w: 1320, h: 1641 },
+  'galera-mesa': { w: 1320, h: 1644 },
+  'galera-dj-set': { w: 1320, h: 1644 },
+  'galera-duo': { w: 1320, h: 1644 },
+  'copos-pilsen': { w: 1320, h: 1154 },
+  'brinde-chopp': { w: 1320, h: 1643 },
+  'smash-burger-chopp': { w: 1320, h: 1643 },
+  'smash-burger': { w: 1320, h: 1643 },
+  'lata-mascate-maracuja': { w: 1320, h: 2186 },
+  'lata-mascate-melancia': { w: 1320, h: 2186 },
+  'lata-gin-tropical': { w: 1320, h: 2186 },
+  'lata-pink-lemonade': { w: 1320, h: 2186 },
+  'lata-mojito': { w: 1320, h: 2186 },
+}
