@@ -297,18 +297,22 @@
     transform: none;
   }
 
-  /* O respiro extra evita cortar acentos (Ú, Ó, Ê) e a vírgula */
+  /*
+    Cada palavra fica numa "janela" que esconde o texto antes da animação.
+    O respiro em cima e embaixo deixa à mostra acentos (Ú, Ó, Ê), cedilha e vírgula
+    nas fontes condensadas, sem mudar o espaçamento entre as linhas.
+  */
   .rt-word {
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
-    padding-block: 0.2em 0.08em;
-    margin-block: -0.2em -0.08em;
+    padding-block: 0.3em 0.36em;
+    margin-block: -0.3em -0.36em;
   }
 
   .rt-inner {
     display: inline-block;
-    transform: translateY(105%);
+    transform: translateY(1.7em);
     transition: transform 0.9s cubic-bezier(0.2, 0.75, 0.15, 1);
     transition-delay: calc(var(--i, 0) * 55ms + 80ms);
   }

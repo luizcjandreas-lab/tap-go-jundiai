@@ -12,6 +12,14 @@ export function useInView({ threshold = 0.15, rootMargin = '0px 0px -8% 0px', on
       setInView(true)
       return undefined
     }
+    // Conteúdo que já está na tela ao abrir a página aparece na hora,
+    // sem depender do observador (alguns navegadores dentro de apps o atrasam).
+    const rect = el.getBoundingClientRect()
+    const viewport = window.innerHeight || document.documentElement.clientHeight
+    if (once && rect.top < viewport && rect.bottom > 0) {
+      setInView(true)
+      return undefined
+    }
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
