@@ -26,7 +26,7 @@ export default function ButtonLink({
   return (
     <a href={href} className={`btn ${VARIANTS[variant]} ${SIZES[size]} ${className}`} {...externalProps} {...rest}>
       <span>{children}</span>
-      {Icon ? <Icon aria-hidden="true" size={18} strokeWidth={2} className="btn-icon" /> : null}
+      {Icon ? <Icon aria-hidden="true" size={18} strokeWidth={2} className="btn-icon shrink-0" /> : null}
       {external ? <span className="sr-only"> (abre em nova guia)</span> : null}
     </a>
   )
